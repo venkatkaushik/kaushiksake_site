@@ -224,6 +224,9 @@
   .venture-row:last-child { border-bottom: none; }
   .venture-name { font-size: 14px; font-weight: 600; color: var(--text); }
   .venture-cat { font-size: 11px; color: var(--muted); margin-top: 3px; }
+  .venture-points { margin: 8px 0 0; padding-left: 14px; display: flex; flex-direction: column; gap: 6px; }
+  .venture-points li { font-size: 11.5px; color: var(--muted); line-height: 1.55; }
+  .venture-points li::marker { color: var(--accent2); }
   .tag {
     font-size: 10px; font-weight: 500; padding: 3px 9px;
     border-radius: 20px; white-space: nowrap; flex-shrink: 0;
@@ -486,6 +489,18 @@
       <div>
         <div class="venture-row">
           <div>
+            <div class="venture-name">Booking Holdings</div>
+            <div class="venture-cat">Sr. PM Technical · Marketplace · 2026–Present</div>
+            <ul class="venture-points">
+              <li>Led a multi-quarter platform migration retiring legacy infrastructure from revenue-critical user journeys, coordinating 3 organizations across 4 geographies to serve tens of millions of daily users on the modern stack with a 40% improvement in P99 latency.</li>
+              <li>Shipped a shared routing solution enabling per-URL tracking for SEO landing pages, giving marketing and SEO teams the ability to measure the impact of crawler traffic.</li>
+              <li>Defined a 2-year modernization roadmap for the Accommodations business, enabling AI adoption, including the Booking AI Trip Planner, through a unified gateway across business units and aligning 5 BUs to drive execution.</li>
+            </ul>
+          </div>
+          <span class="tag tag-purple">Travel</span>
+        </div>
+        <div class="venture-row">
+          <div>
             <div class="venture-name">o9 Solutions</div>
             <div class="venture-cat">Sr. PM / Lead PM Observability · 2021–2026</div>
             <div class="venture-cat" style="margin-top:4px;color:#7A7972;">$5M infra cost reduction · OpenTelemetry · Jaeger · Elastic</div>
@@ -628,7 +643,7 @@
         <div class="obs-card-label">Deployments</div>
         <div class="obs-card-val" style="color:var(--accent2);">6</div>
         <div class="obs-card-sub">Industries shipped in</div>
-        <div class="trend trend-up">↑ Advisory active</div>
+        <div class="trend trend-up">↑ Booking Holdings active</div>
       </div>
       <div class="obs-card">
         <div class="obs-card-label">Error rate</div>
@@ -693,6 +708,7 @@
       <p style="font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#7A7972;margin-bottom:16px;">Deployment log</p>
       <div class="tl-grid">
         <div class="timeline">
+          <div class="tl-row"><div class="tl-year">2026 →</div><div class="tl-body"><div class="tl-title">Booking Holdings</div><div class="tl-org">Sr. PM, Marketplace</div><div class="tl-detail">Tens of millions of daily users · P99 −40%</div></div></div>
           <div class="tl-row"><div class="tl-year">2021–26</div><div class="tl-body"><div class="tl-title">o9 Solutions</div><div class="tl-org">Lead PM, Observability</div><div class="tl-detail">$5M infra savings · OpenTelemetry</div></div></div>
           <div class="tl-row"><div class="tl-year">2019–21</div><div class="tl-body"><div class="tl-title">Droice Labs</div><div class="tl-org">Product & Business Lead</div><div class="tl-detail">Health AI · 30+ hospitals · $1M+</div></div></div>
           <div class="tl-row"><div class="tl-year">2018–19</div><div class="tl-body"><div class="tl-title">Infruid Labs → Pegasystems</div><div class="tl-org">Sr. Solutions Engineer</div><div class="tl-detail">Built Pega BI · Acquired · Enterprise scale</div></div></div>
